@@ -1,0 +1,154 @@
+Learn step by step
+
+What is cypress?
+  - Test Automation tool
+  - can test anything that runs on  web browser
+  -  write tests in JS or Typescript
+  - does not user Selenium
+  - Open source
+
+Getting started
+    - How to use cypress 
+        - Setup tests
+        - Write tests
+        - Run Tests
+        - Debug
+    - Cypress Features
+        - Time Travel takes snapshots as your tests run
+        - Debuggability readable errors and stack traces
+        - Automatic Waiting automatically waits for commmands and assertions before moving on
+        - Consistent Results doesn't use Selenium or Webdriver, fast, consistent and reliable
+        - Screenshots and Videos get screenshots and Videos
+        - Cross browser Testing locally or remote (CI CD)
+    - Type of test with cypress 
+        - End to end tests 
+        - Integration tests with
+        - Unit tests        
+    
+
+Installation and setup
+
+IDE and Pre-requisites
+
+- npm init => create the package.json where the user needs to answer some questions
+- npm init -y => no question asked and the user agrees to the defaults options 
+- npm install cypress => install latest version of cypress 
+- npm install cypress@version => install specific version of cypress
+- npx cypress -v => checks cypress version
+- npx cypress verify => checks cypress dependencies
+- npx cypress start => start cypress and create the folder and file structure
+
+
+
+
+Object locators
+
+Cyress with Javascript
+
+Cypress with Typescript
+
+Assertions
+
+Page Object Modael
+
+App Actions
+
+Grouping Tests
+
+CLI 
+
+Package.json
+
+File Handling (Read, write, upload and download)
+
+Reporting
+
+API testing
+Custom Commands
+
+Cypress Studio
+
+Cypress Dashboard
+
+Cypress BDD Framework
+
+Database Integration
+
+Git 
+
+Jenkins 
+
+
+-----------------------SDET--------------------------------
+Cypress Introduction
+
+Environment Setup
+
+How to write and run tests
+    -- describe - test block for test suite, have 2 parameters - suite name and js function (arrow function or function keyword) 
+    -- Can have multiple it blocks as testcases, have 2 parameters - test name and js function (arrow function or function keyword) 
+    -- Running tests in headless mode - npx cypress run 
+    -- Running tests in headed mode - run all specification files in e2e folder- npx cypress run --headed 
+    -- Running tests in headed mode - run specific spec file- npx cypress run --spec path to file --headed (remove the --headed flag for headless execution)
+    -- Running tests in headed mode with cypress test runner- npx cypress open 
+    -- Running tests on  a specific browser - npx cypress run --browser chrome (By default tests runs on electron browser)
+
+    Test Hirearchy: Spec file (cy.js) --> multiple describe blocks (test suites) --> multiple it blocks (tests)
+
+Locators - Use to Identify the web elements
+    CSS Selectors - default locators supported by cypress
+
+    XPath - Can use xpath as well but need to install cypress xpath plugin to use the same
+
+
+Assertions
+
+Folder structure
+
+Interacting with Elements - Radio button and checkboxes
+
+Interacting with Elements - dropdowns
+
+Interacting with Elements - alerts
+
+Interacting with Elements - Handling child tabs 
+
+Interacting with Elements - Handling iframes 
+
+Interacting with Elements - Handling tables
+
+Interacting with Elements - Handling mouse events 
+
+Interacting with Elements - Handling file uploads 
+
+Cypress E2E web Automation - Hooks and Tags 
+
+Cypress E2E web Automation - Fixtures and Data Driven testing 
+
+Cypress E2E web Automation  - How to create custom commands
+
+Cypress E2E web Automation  - Browser naviagtion - Go and Reload
+
+Cypress E2E web Automation - How to capture screenshots and videos on test failures 
+
+Cypress E2E web Automation - How to generate HTML reports | Headed and Headless mode execution
+
+Cypress E2E web Automation  - Page model object pattern in cypress 
+
+
+
+
+
+
+
+
+1. Go to the react application in the cmd and run npm install to install the react application dependencies
+2. Install cypress t the project with npm install cypress
+3. Run the development server with npm run dev
+4. Check the react application running on the localhost
+5. Open the cypress app with npx cypress open
+6. Cypress runner widow opens up with the following sections - E2E Testing and Component Testing
+7. Select the E2E testing in the test runner, window opens up to add the configuration files in the project, click Continue
+8. Choose the browser (Chrome) and click "Start E2E testing in Chrome"
+9. opens a browser with the app and the following options: Scaffold example specs and Create New specs
+10. Click on "Create new spec", name it and run the spec file
